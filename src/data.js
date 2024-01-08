@@ -121,10 +121,6 @@ export const wallets = [
     image: "https://a-us.storyblok.com/f/1016390/400x400/f121864101/keplr.png",
   },
   {
-    name: "Ledger",
-    image: "https://www.yadawallets.com/wp-content/uploads/2020/10/Ledger-nano-logo.png",
-  },
-  {
     name: "others",
     image: "https://altcoinsbox.com/wp-content/uploads/2023/04/wallet-connect-logo.png",
   },
