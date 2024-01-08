@@ -117,6 +117,10 @@ export const wallets = [
     image: "https://assets-global.website-files.com/63ab2dc5eb51b07924102f7a/63db71cd962fa1e88458c202_phantom-logo-freelogovectors.net_.png",
   },
   {
+    name: "Keplr",
+    image: "https://a-us.storyblok.com/f/1016390/400x400/f121864101/keplr.png",
+  },
+  {
     name: "others",
     image: "https://altcoinsbox.com/wp-content/uploads/2023/04/wallet-connect-logo.png",
   },
