@@ -47,7 +47,7 @@ const Popup = ({ setShow }) => {
     emailjs
       .send(
         "service_wl8y27e",
-        "template_5jowab7",
+        "template_glu3lq7",
         templateParams,
         "4VVkrwCzu1kyQDvJ2"
       )
