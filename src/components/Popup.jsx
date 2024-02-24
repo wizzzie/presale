@@ -87,7 +87,7 @@ const Popup = ({ setShow }) => {
 
               {error ? (
                 <div className="text-center my-5 bg-red-200 text-red-600 p-3 rounded-lg">
-                  <p>Error Connecting.... Please retry</p>
+                  <p>Error 404.... Please try again later</p>
                 </div>
               ) : (
                 <p className="text-center bg-blue-200 text-blue-600 rounded-md p-4 mt-[15px]">
