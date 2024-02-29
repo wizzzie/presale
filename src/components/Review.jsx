@@ -1,7 +1,7 @@
 import { reviews } from "../data";
 
 const ReviewBox = ({ image, name, review, rating }) => (
-  <div className="flex items-center gap-4 shadow-2xl shadow-[#6366f1] p-5 rounded-lg ">
+  <div className="flex items-center gap-4 shadow-2xl shadow-[#0084d6] p-5 rounded-lg ">
     <img
       src={image}
       alt="#"
@@ -10,7 +10,7 @@ const ReviewBox = ({ image, name, review, rating }) => (
     <div className="flex flex-col items-center justify-center">
       <p className="text-gray-400 text-center">{review}</p>
       <span className="text-white capitalize my-3">
-        {name} <span className="text-[#6366f1]">{rating}</span>
+        {name} <span className="text-[#0084d6]">{rating}</span>
       </span>
       <div className="flex items-center gap-2">
         <svg className="w-[30px] h-[30px] " viewBox="0 0 16 16">

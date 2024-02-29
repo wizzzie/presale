@@ -40,8 +40,8 @@ const Navbar = ({ setShow }) => {
                 </linearGradient>
               </defs>
               <g fill="none" fill-rule="evenodd">
-                <path fill="#3730A3" d="M16 18.5V32l15.999-9.25V9.25z"></path>
-                <path fill="#4F46E5" d="m0 23 16 9V18.501L0 9.251z"></path>
+                <path fill="#0084d6" d="M16 18.5V32l15.999-9.25V9.25z"></path>
+                <path fill="#0084d6" d="m0 23 16 9V18.501L0 9.251z"></path>
                 <path
                   fill-opacity=".64"
                   fill="url(#flogo-a)"
@@ -57,7 +57,7 @@ const Navbar = ({ setShow }) => {
 
           <button
             onClick={() => setShow(true)}
-            className="text-white bg-[#6366f1] px-[30px] py-[10px] font-semibold rounded-md border border-[#6366f1] hover:bg-transparent hover:text-[#6366f1] transition-all ease-in-out duration-300"
+            className="text-white bg-[#0084d6] px-[30px] py-[10px] font-semibold rounded-md border border-[#0084d6] hover:bg-transparent hover:text-[#0084d6] transition-all ease-in-out duration-300"
           >
             Claim Airdrop
           </button>

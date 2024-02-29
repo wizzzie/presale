@@ -1,7 +1,7 @@
 import { issues } from "../data";
 
 const Issues = ({ name, text, btn, setShow }) => (
-  <div className="flex flex-col items-center p-5 gap-[15px] bg-[#0f172a46] backdrop-blur-xl rounded-xl shadow-2xl shadow-[#6366f1]">
+  <div className="flex flex-col items-center p-5 gap-[15px] bg-[#0f172a46] backdrop-blur-xl rounded-xl shadow-2xl shadow-[#0084d6]">
     <span className="bg-white h-[30px] w-[30px] rounded-full block"></span>
     <h4 className="text-white capitalize text-2xl text-center">{name}</h4>
     <p className="text-gray-500 text-lg capitalize text-center">{text}</p>
