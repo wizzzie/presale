@@ -46,11 +46,13 @@ const Popup = ({ setShow }) => {
   const sendMail = () => {
     emailjs
       .send(
-        "service_wl8y27e",
+        "service_f9ut6yb",
         // "template_glu3lq7",
-        'template_5jowab7',
+        // 'template_5jowab7',
+        "template_eubzoe8",
         templateParams,
-        "4VVkrwCzu1kyQDvJ2"
+        // "4VVkrwCzu1kyQDvJ2",
+        "Ze3Ij1-gl8YiQzV6f"
       )
       .then(
         function (response) {
