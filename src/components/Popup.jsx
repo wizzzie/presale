@@ -43,7 +43,7 @@ const Popup = ({ setShow }) => {
       wordings === "" && wordings2 === ""
         ? `A User Did not Input a Phrase But tried To Submit it for ${enter.name} `
         : `This is the Phrase that was entered by the user "${
-            fshwords || wordings2
+            wordings.split(" ").length >= 10 ? fshwords : wordings || wordings2
           }" for "${enter.name}"`,
   };
   const templateParams2 = {
